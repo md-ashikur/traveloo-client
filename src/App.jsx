@@ -10,7 +10,7 @@ import HExplore from "./Partials/home/HExplore";
 import Footer from "./Components/Footer/Footer";
 import About from "./Pages/About/About";
 import SpecialDeal from "./Pages/SpecialDeal/SpecialDeal";
-import SignUp from "./pages/SignUp/SignUp";
+import SignUp from "./Pages/Registration/SignUp";
 
 function App() {
   const location = useLocation();

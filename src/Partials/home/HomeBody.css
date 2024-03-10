@@ -1,0 +1,41 @@
+/* .circle1 {
+  background: radial-gradient(#ff5722 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: -50;
+} */
+
+.swiper-slide-active {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.service-slide {
+  background: #fff;
+  width: 350px !important;
+  height: 443px !important;
+  padding: 64px;
+  border-radius: 32px;
+}
+
+/* explore section--------------- */
+.explorer-slide{
+    width: 320px !important;
+    height: 470px !important;
+    background: #fff;
+
+}
+
+/* key feature section-------------- */
+.key-div:hover .key-icon{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: scale(1.2);
+    border-radius: 50%;
+    transition: ease-in-out 0.2s;
+    
+}
+
+
+/* Testimonial section------------ */
+
+.testimonial-slide{
+  height: 470px !important;
+}
+
+

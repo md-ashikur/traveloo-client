@@ -115,9 +115,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      
+      {/* {/* Mobile menu   */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden mt-4`}>
-        {/* Mobile menu */}
+        
         <NavLink
          
           to="/"

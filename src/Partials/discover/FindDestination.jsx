@@ -21,9 +21,9 @@ const FindDestination = () => {
         <div className="lg:w-[85vw]  bg-base lg:h-20 mx-auto p-3 flex items-center rounded-lg my-8 overflow-hidden">
           {/* form-------------- */}
           <form onSubmit={handleSubmit(onSubmit)} className="w-full gap-3">
-            <div className="grid lg:grid-cols-8">
+            <div className="grid lg:grid-cols-8 py-4 lg:py-0">
               {/* ----------Location-------------- */}
-              <div className="col-span-3 px-2">
+              <div className="col-span-3 px-3">
                 <h6 className="t">Location</h6>
                 <input
                   placeholder="Where are you going?"
@@ -47,11 +47,13 @@ const FindDestination = () => {
               </div>
 
               {/* ---------Guest--------- */}
-              <div className="col-span-2 relative lg:border-l-2 px-3">
+           <div className="col-span-3 grid lg:grid-cols-5 ">
+           <div className="col-span-3 lg:border-l-2 px-3">
                 <h6 className="">Guest</h6>
-                <p className="text-[16px] mt-2 font-semibold absolute">2 adults - 1 childeren - 1 room</p>
+                
                 <input
-                  className="outline-none "
+                placeholder="2 adults - 1 childeren"
+                  className="outline-none mt-2 w-full "
                   type="text"
                   {...register("guest")}
                  
@@ -62,8 +64,9 @@ const FindDestination = () => {
               <input
                 type="submit"
                 value="Search"
-                className="h-[60px] hover:scale-[0.95]  rounded transition duration-150 ease-in-out bg-secondary   text-base"
+                className="lg:col-span-2 col-span-5 h-10 lg:h-[60px] mt-3 lg:mt-0 hover:scale-[0.95]  rounded transition duration-150 ease-in-out bg-secondary   text-base"
               />
+           </div>
             </div>
           </form>
         </div>

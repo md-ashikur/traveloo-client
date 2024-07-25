@@ -72,7 +72,7 @@ const ContactBody = () => {
 
       <div className="lg:p-20 p-5 text-center bg-slate-100">
         <div className="flex flex-col items-center">
-          <h1 className="font-bold">Get in Touch</h1>
+          <h1 className="text-3xl font-bold">Get in Touch</h1>
           <p className="my-5 max-w-[600px]">
             Write to us for personalized travel advice or for information on
             group travel and last minute travel, all travel is insured and safe.

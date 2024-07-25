@@ -24,7 +24,7 @@ const SearchResult = () => {
   console.log(minPrice, maxPrice);
 
   return (
-    <div className="px-20 grid grid-cols-4 gap-5 my-20">
+    <div className="lg:px-20 px-5 grid lg:grid-cols-4 gap-5 my-20">
       {/* filter part----------- */}
       <div className="">
         {/* Price Range============= */}
@@ -274,18 +274,18 @@ const SearchResult = () => {
       </div>
 
       {/* list--------------- */}
-      <div className="col-span-3">
+      <div className="lg:col-span-3">
         <div className="my-5">
           <h6>3,269 results in Europe</h6>
         </div>
         <hr />
 
         {/* card1----------- */}
-        <div className="grid grid-cols-4 my-5 border-b-2 px-2 py-5">
+        <div className="grid lg:grid-cols-4 my-5 border-b-2 px-2 py-5">
           <div className="rounded-2xl h-[280px] overflow-hidden">
             <img src={img1} alt="" />
           </div>
-          <div className="col-span-3 p-3">
+          <div className="lg:col-span-3 p-3">
             <div className="grid grid-cols-3">
               <div className="col-span-2">
                 <h6>
@@ -294,11 +294,11 @@ const SearchResult = () => {
                 </h6>
                 <p className="text-sm my-3">
                   Westminster Borough, London
-                  <span className="text-secondary">Show on map</span> - 2 km to
+                  <span className="text-secondary"> Show on map</span> - 2 km to
                   city center
                 </p>
 
-                <div className="mt-16">
+                <div className="lg:mt-16 mt-10">
                   <p className="text-tertiary text-sm font-semibold">
                     Free cancellation
                   </p>
@@ -328,12 +328,12 @@ const SearchResult = () => {
                 </p>
                 <p className="text-sm">3,014 reviews</p>
 
-                <div className="mt-20">
+                <div className="lg:mt-20 mt-3">
                   <p className="text-sm">8 nights, 2 adult</p>
                   <h5>US$88</h5>
                   <p className="text-sm">+US$828 taxes and charges</p>
 
-                  <button className="bg-secondary px-10 py-2 mt-5 text-base rounded-lg">
+                  <button className="bg-secondary lg:px-10 px-1 lg:py-2  mt-5 text-base rounded-lg">
                     See Details
                   </button>
                 </div>
@@ -342,11 +342,11 @@ const SearchResult = () => {
           </div>
         </div>
         {/* card2----------- */}
-        <div className="grid grid-cols-4 my-5 border-b-2 px-2 py-5">
+        <div className="grid lg:grid-cols-4 my-5 border-b-2 px-2 py-5">
           <div className="rounded-2xl h-[280px] overflow-hidden">
             <img src={img1} alt="" />
           </div>
-          <div className="col-span-3 p-3">
+          <div className="lg:col-span-3 p-3">
             <div className="grid grid-cols-3">
               <div className="col-span-2">
                 <h6>
@@ -355,11 +355,11 @@ const SearchResult = () => {
                 </h6>
                 <p className="text-sm my-3">
                   Westminster Borough, London
-                  <span className="text-secondary">Show on map</span> - 2 km to
+                  <span className="text-secondary"> Show on map</span> - 2 km to
                   city center
                 </p>
 
-                <div className="mt-16">
+                <div className="lg:mt-16 mt-10">
                   <p className="text-tertiary text-sm font-semibold">
                     Free cancellation
                   </p>
@@ -389,12 +389,74 @@ const SearchResult = () => {
                 </p>
                 <p className="text-sm">3,014 reviews</p>
 
-                <div className="mt-20">
+                <div className="lg:mt-20 mt-3">
                   <p className="text-sm">8 nights, 2 adult</p>
                   <h5>US$88</h5>
                   <p className="text-sm">+US$828 taxes and charges</p>
 
-                  <button className="bg-secondary px-10 py-2 mt-5 text-base rounded-lg">
+                  <button className="bg-secondary lg:px-10 px-1 lg:py-2  mt-5 text-base rounded-lg">
+                    See Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* card-3  */}
+        <div className="grid lg:grid-cols-4 my-5 border-b-2 px-2 py-5">
+          <div className="rounded-2xl h-[280px] overflow-hidden">
+            <img src={img1} alt="" />
+          </div>
+          <div className="lg:col-span-3 p-3">
+            <div className="grid grid-cols-3">
+              <div className="col-span-2">
+                <h6>
+                  The Montcalm At Brewery London City Westminster Borough,
+                  London
+                </h6>
+                <p className="text-sm my-3">
+                  Westminster Borough, London
+                  <span className="text-secondary"> Show on map</span> - 2 km to
+                  city center
+                </p>
+
+                <div className="lg:mt-16 mt-10">
+                  <p className="text-tertiary text-sm font-semibold">
+                    Free cancellation
+                  </p>
+                  <p className="text-tertiary text-sm">
+                    You can cancel later, so lock in this great price today.
+                  </p>
+
+                  {/* tags----------- */}
+                  <div className="flex mt-5 gap-3">
+                    <span className="text-xs border px-5 py-2 rounded-full">
+                      Romantic
+                    </span>
+                    <span className="text-xs border px-5 py-2 rounded-full">
+                      Forest
+                    </span>
+                    <span className="text-xs border px-5 py-2 rounded-full">
+                      Mountain
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* ----------right side-------------- */}
+              <div className="text-end">
+                <p className="text-sm text-secondary font-semibold">
+                  Exceptional
+                </p>
+                <p className="text-sm">3,014 reviews</p>
+
+                <div className="lg:mt-20 mt-3">
+                  <p className="text-sm">8 nights, 2 adult</p>
+                  <h5>US$88</h5>
+                  <p className="text-sm">+US$828 taxes and charges</p>
+
+                  <button className="bg-secondary lg:px-10 px-1 lg:py-2  mt-5 text-base rounded-lg">
                     See Details
                   </button>
                 </div>

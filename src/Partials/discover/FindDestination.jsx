@@ -11,17 +11,17 @@ const FindDestination = () => {
 
   return (
     <section className="">
-      <div className="bg-[#f5f5f5] p-20 ">
+      <div className="bg-[#f5f5f5] lg:p-20 p-5">
        <div className="text-center">
        <h3>Find Your Dream Destinations</h3>
         <p>These popular destinations have a lot to offer</p>
        </div>
 
         {/* search bar start------------------ */}
-        <div className="w-[85vw]  bg-base h-20 mx-auto p-3 flex items-center rounded-lg my-8 overflow-hidden">
+        <div className="lg:w-[85vw]  bg-base lg:h-20 mx-auto p-3 flex items-center rounded-lg my-8 overflow-hidden">
           {/* form-------------- */}
           <form onSubmit={handleSubmit(onSubmit)} className="w-full gap-3">
-            <div className="grid grid-cols-8">
+            <div className="grid lg:grid-cols-8">
               {/* ----------Location-------------- */}
               <div className="col-span-3 px-2">
                 <h6 className="t">Location</h6>
@@ -35,7 +35,7 @@ const FindDestination = () => {
               </div>
 
               {/* ---------Check in - Check out--------- */}
-              <div className="col-span-2 border-l-2 px-3">
+              <div className="col-span-2 lg:border-l-2 px-3 my-5 lg:my-0">
                 <h6 className="">Check in - Check out</h6>
                 <input
                   className="outline-none  my-2 "
@@ -47,7 +47,7 @@ const FindDestination = () => {
               </div>
 
               {/* ---------Guest--------- */}
-              <div className="col-span-2 relative border-l-2 px-3">
+              <div className="col-span-2 relative lg:border-l-2 px-3">
                 <h6 className="">Guest</h6>
                 <p className="text-[16px] mt-2 font-semibold absolute">2 adults - 1 childeren - 1 room</p>
                 <input

@@ -20,8 +20,8 @@ const SignUpBody = () => {
     setPasswordShown(!passwordShown);
   };
   return (
-    <section className="py-20  px-20 bg-[#e5f0fd]">
-      <div className="w-[40vw] bg-white mx-auto my-7 p-10 rounded-lg">
+    <section className="py-20  px-5 lg:px-20 bg-[#e5f0fd]">
+      <div className="lg:w-[40vw] bg-white mx-auto my-7 p-7 rounded-lg">
         <h3 className="text-center">Sign Up</h3>
 
         {/* form-------------- */}

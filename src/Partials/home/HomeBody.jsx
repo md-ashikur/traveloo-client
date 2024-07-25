@@ -24,7 +24,7 @@ const HomeBody = () => {
     <div className="">
       {/* <div className="circle1 min-h-[700px] min-w-[700px] absolute -top-52 -left-72 rounded-full opacity-50"></div> */}
 
-      <div className="px-28 py-28 flex justify-center">
+      <div className="lg:px-28 px-5 py-28 flex justify-center">
         {/* header   start */}
         <header className="flex gap-10">
           <div className="max-w-[350px] mt-16">
@@ -79,7 +79,7 @@ const HomeBody = () => {
       </div>
 
       {/* company logos start========== */}
-      <section className="flex flex-wrap items-center lg:justify-between justify-center px-28 gap-10 py-20 ">
+      <section className="flex flex-wrap items-center lg:justify-between justify-center lg:px-28 px-5 gap-10 py-20 ">
         <img src={clogo1} alt="" />
         <img src={clogo2} alt="" />
         <img src={clogo3} alt="" />

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-5 gap-5 bg-base px-28 py-20">
-      <div className="col-span-2 p-4">
+    <footer className="grid lg:grid-cols-5 gap-5 bg-base px-5 lg:px-28 py-20">
+      <div className="lg:col-span-2 p-4">
         <h3 className="flex gap-3 items-center">
           {" "}
           <SiYourtraveldottv className="w-10 h-10 text-secondary" />

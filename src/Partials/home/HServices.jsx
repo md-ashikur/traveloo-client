@@ -9,7 +9,7 @@ import "swiper/css";
 const HServices = () => {
   return (
     <div>
-      <section className="pl-28 my-10 grid grid-cols-3 overflow-hidden">
+      <section className="pl-28 my-10 grid lg:grid-cols-3 overflow-hidden">
         <div className="place-self-center">
           <h4 className="text-primary">Services</h4>
           <h2>Our top value categories for you</h2>

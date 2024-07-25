@@ -18,7 +18,7 @@ const HExplore = () => {
 
   return (
     <section className="flex justify-center">
-      <div className="px-28 my-20 max-w-[1345px] overflow-hidden">
+      <div className="lg:px-28 px-5 my-20 max-w-[1345px] overflow-hidden">
       <div className="flex justify-between items-center ">
         <div>
           <h4 className="text-primary">Top Destination</h4>

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const SpecialDealBody = () => {
   return (
-    <div className="my-28 px-20">
+    <div className="my-28 px-5 lg:px-20">
       <div className="flex flex-col justify-center items-center">
-        <h1>Affordable Travel Packages</h1>
+        <h1 className="text-4xl text-center font-bold">Affordable Travel Packages</h1>
         <p className="max-w-[800px] mt-6 text-center">
           Explore our diverse range of travel packages crafted to fulfill every
           wanderlust desire. From exotic getaways to cultural immersions, find
@@ -13,7 +13,7 @@ const SpecialDealBody = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 my-20">
+      <div className="grid lg:grid-cols-3 gap-5 my-20">
         {/* 1st ------------- */}
         <div className="text-white bg-gradient-to-b from-cyan-500 to-secondary  text-center py-20 px-10 rounded-3xl">
           <h3>Beach Paradise Retreat</h3>

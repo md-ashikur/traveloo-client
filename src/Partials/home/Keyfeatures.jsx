@@ -8,7 +8,7 @@ import bgdesign from "../../assets/images/BACKGROUND.png";
 import { SiGooglemaps } from "react-icons/si";
 const Keyfeatures = () => {
   return (
-    <section className="px-28 pt-28 grid grid-cols-2">
+    <section className="lg:px-28 px-5 pt-28 relative grid lg:grid-cols-2">
       <div className="px-5 ">
         <h4 className="text-primary">Key features</h4>
         <h2 className="my-4">We offer best services</h2>

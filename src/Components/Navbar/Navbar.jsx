@@ -31,8 +31,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className={`${navbarBackground} fixed  top-0 w-full px-10 lg:px-20  py-5 z-50`}>
-      <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-3 flex items-center justify-between">
+    <nav className={`${navbarBackground} fixed  top-0 w-full  mb-5 z-50`}>
+      <div className="max-w-7xl mx-auto lg:grid px-6 lg:px-20 py-2 lg:grid-cols-3 flex items-center justify-between">
         <div className="col-span-1 flex items-center  flex-shrink-0 gap-3 ">
         <SiYourtraveldottv className='w-10 h-10 text-secondary'/>
           <span className="font-semibold text-3xl tracking-tight">Traveloo</span>
@@ -96,7 +96,7 @@ const Navbar = () => {
         </div>
 
         <div className="md:hidden">
-          <button onClick={toggleNavbar} className="text-white">
+          <button onClick={toggleNavbar} className="text-secondary">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -116,7 +116,7 @@ const Navbar = () => {
       </div>
 
       {/* {/* Mobile menu   */}
-      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden mt-4`}>
+      <div className={`${isOpen ? 'block' : 'hidden'} p-6 md:hidden bg-secondary text-white mt-4`}>
         
         <NavLink
          
@@ -125,6 +125,14 @@ const Navbar = () => {
           className="block   mb-2"
         >
           Home
+        </NavLink>
+        <NavLink
+         
+          to="/about"
+         
+          className="block   mb-2"
+        >
+          About
         </NavLink>
         <NavLink
           to="/discover"
@@ -150,13 +158,13 @@ const Navbar = () => {
         <div>
           <NavLink
             to="/login"
-            className="block text-white border rounded border-white hover:border-transparent hover:text-gray-900 hover:bg-white px-3 py-1 mt-4"
+            className="block text-center text-white border rounded border-white hover:border-transparent hover:text-gray-900 hover:bg-white px-3 py-1 mt-4"
           >
             Login
           </NavLink>
           <NavLink
             to="/signup"
-            className="block text-white border rounded border-white hover:border-transparent hover:text-gray-900 hover:bg-white px-3 py-1 mt-2"
+            className="block text-center text-white border rounded border-white hover:border-transparent hover:text-gray-900 hover:bg-white px-3 py-1 mt-2"
           >
             Sign Up
           </NavLink>

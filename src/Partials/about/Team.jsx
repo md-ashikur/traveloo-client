@@ -14,7 +14,7 @@ const Team = () => {
   const navigationNextRef = React.useRef(null);
   return (
     <section className="flex justify-center ">
-      <div className="px-20 py-10 my-20 max-w-[1300px] overflow-hidden">
+      <div className="lg:px-20 px-5 py-10 my-20 max-w-[1300px] overflow-hidden">
         <div className="flex justify-between items-center ">
           <div>
             <h2 className="text-primary">Our Team</h2>

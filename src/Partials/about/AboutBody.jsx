@@ -11,18 +11,18 @@ import Faq from "./Faq";
 const AboutBody = () => {
   return (
     <div>
-        <header className="header-pic mt-20 pt-5 text-white text-center flex flex-col  justify-center">
-           <h1>Looking for joy?</h1>
+        <header className="header-pic lg:h-[80vh] h-52 mt-20 pt-5 text-white text-center flex flex-col  justify-center">
+           <h1 className="lg:text-5xl text-4xl font-bold">Looking for joy?</h1>
            <p className="text-white py-5">Your trusted trip companion</p>
         </header>
 
       {/* ==================Why Choose Us ==============*/}
-      <section className="my-28 px-28 text-center">
+      <section className="my-28 lg:px-28 px-5 text-center">
         <div className="my-16">
           <h2>Why Choose Us</h2>
           <p className="mt-5">These popular destinations have a lot to offer</p>
         </div>
-        <div className="grid grid-cols-3 gap-5 text-center my-10">
+        <div className="grid lg:grid-cols-3 gap-5 text-center my-10">
           {/* Best Price Guarantee */}
           <div className="flex flex-col items-center gap-5 p-5">
             <div className="bg-slate-100 text-secondary w-28 h-28 rounded-full flex justify-center items-center p-6">
@@ -62,9 +62,9 @@ const AboutBody = () => {
       </section>
 
       {/* About traveloo=================== */}
-      <section className="px-28">
-        <div className="grid grid-cols-2 gap-5">
-            <div className="pr-20">
+      <section className="px-5 lg:px-28">
+        <div className="grid lg:grid-cols-2 gap-5">
+            <div className="lg:pr-20">
                 <h2>About Traveloo</h2>
                 <p className="my-5 text-justify text-sm  leading-loose text-black">
                 Welcome to Traveloo, where every journey is a story waiting to unfold. Founded on the passion for exploration and a commitment to exceptional travel experiences, Traveloo is your gateway to a world of adventure. 

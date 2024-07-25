@@ -4,8 +4,8 @@ import "./AboutBody.css";
 const Faq = () => {
   return (
     <div>
-      <div className="px-20 max-w-[70%] mx-auto mb-20">
-        <h1 className="text-center my-10">FAQ</h1>
+      <div className="lg:px-20 px-5 lg:max-w-[70%] w-full mx-auto mb-20">
+        <h1 className="text-center text-4xl font-bold mb-10">FAQ</h1>
 
         <div className="faq-drawer">
           <input

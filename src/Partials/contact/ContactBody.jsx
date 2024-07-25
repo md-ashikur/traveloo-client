@@ -13,7 +13,7 @@ const ContactBody = () => {
   const onSubmit = (data) => console.log(data);
   return (
     <div>
-      <div className="grid grid-cols-3 gap-5 px-20 mb-20 mt-28">
+      <div className="grid lg:grid-cols-3 gap-5 lg:px-20 px-5 mb-20 mt-28">
         <div className="p-4">
           <div className="flex items-center my-8 gap-3">
             <div className="flex justify-center items-center bg-secondary text-2xl w-16 h-16 rounded-full  text-white">
@@ -70,7 +70,7 @@ const ContactBody = () => {
         </div>
       </div>
 
-      <div className="p-20 text-center bg-slate-100">
+      <div className="lg:p-20 p-5 text-center bg-slate-100">
         <div className="flex flex-col items-center">
           <h1 className="font-bold">Get in Touch</h1>
           <p className="my-5 max-w-[600px]">
@@ -84,7 +84,7 @@ const ContactBody = () => {
           <div>
             <input
               placeholder="Your name"
-              className="outline-none border-inherit border my-2 px-5 py-3 w-[600px] h-[60px] rounded-2xl"
+              className="outline-none border-inherit border my-2 px-5 py-3 w-full lg:w-[600px] h-[60px] rounded-2xl"
               {...register("name", {
                 required: "Your Name is required",
               })}
@@ -99,7 +99,7 @@ const ContactBody = () => {
           <div>
             <input
               placeholder="Your Email"
-              className="outline-none px-5 border-inherit border my-2 py-3 w-[600px] h-[60px] rounded-2xl"
+              className="outline-none px-5 border-inherit border my-2 py-3 w-full lg:w-[600px] h-[60px] rounded-2xl"
               type="email"
               {...register("email", {
                 required: "Your Email Address is required",
@@ -115,7 +115,7 @@ const ContactBody = () => {
           <div>
             <textarea
               placeholder="Your Message"
-              className="outline-none px-5 border-inherit border my-2 py-3 w-[600px] h-[120px] rounded-2xl"
+              className="outline-none px-5 border-inherit border my-2 py-3 w-full lg:w-[600px] h-[120px] rounded-2xl"
               {...register("messages", {
                 required: "Your Message is required",
               })}
@@ -130,7 +130,7 @@ const ContactBody = () => {
           <input
             type="submit"
             value="Submit"
-            className="hover:scale-[1.04] transition duration-150 ease-in-out bg-secondary h-[60px] px-7 w-[600px] rounded-full text-base"
+            className="hover:scale-[1.04] transition duration-150 ease-in-out bg-secondary h-[60px] px-7 w-full lg:w-[600px] rounded-full text-base"
           />
         </form>
       </div>

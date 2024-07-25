@@ -2,11 +2,11 @@ import React from 'react';
 import travelpoint from "../../assets/images/Group 9238.png"
 const TravelPoint = () => {
     return (
-        <section className='grid grid-cols-5'>
+        <section className='grid lg:grid-cols-5'>
             <div className='col-span-3'>
                 <img src={travelpoint} alt="" />
             </div>
-            <div className='mr-28 mt-5 text-justify col-span-2'>
+            <div className='lg:mr-28 mt-5 text-justify lg:col-span-2'>
                 <h4 className='text-primary '>Travel Point</h4>
                 <h2 className='my-6'>We helping you find your dream location</h2>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>

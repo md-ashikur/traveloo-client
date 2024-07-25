@@ -8,19 +8,16 @@
 }
 .service-slide {
   background: #fff;
-  width: 350px !important;
-  height: 443px !important;
-  padding: 64px;
   border-radius: 32px;
 }
 
 /* explore section--------------- */
-.explorer-slide{
+/* .explorer-slide{
     width: 320px !important;
     height: 470px !important;
     background: #fff;
 
-}
+} */
 
 /* key feature section-------------- */
 .key-div:hover .key-icon{
@@ -34,8 +31,6 @@
 
 /* Testimonial section------------ */
 
-.testimonial-slide{
-  height: 470px !important;
-}
+
 
 

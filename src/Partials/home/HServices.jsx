@@ -9,21 +9,39 @@ import "swiper/css";
 const HServices = () => {
   return (
     <div>
-      <section className="pl-28 my-10 grid lg:grid-cols-3 overflow-hidden">
-        <div className="place-self-center">
+      <div className="lg:pl-28 px-5 my-10 grid lg:grid-cols-3 overflow-hidden">
+        <div className="lg:place-self-center ">
           <h4 className="text-primary">Services</h4>
-          <h2>Our top value categories for you</h2>
+          <h2 className="max-w-[300px] lg:max-w-full">Our top value categories for you</h2>
         </div>
-        <div className="col-span-2 relative ">
+        <div className="lg:col-span-2">
           <Swiper
-            slidesPerView={"auto"}
+           breakpoints={{
+            360: {
+              slidesPerView: 1,
+              
+            },
+            390: {
+              slidesPerView: 1,
+             
+            },
+            768: {
+              slidesPerView: 3,
+             
+            },
+            1024: {
+              slidesPerView: "auto",
+            },
+           
+          }}
+            
             centeredSlides={true}
             spaceBetween={10}
             grabCursor={true}
-            className="mySwiper py-10 pl-28"
+            className="mySwiper py-10 lg:pl-28"
           >
             {/* card -1=========== */}
-            <SwiperSlide className="service-slide flex flex-col items-center">
+            <SwiperSlide className="service-slide p-10 lg:h-[443px] w-[80vw] lg:w-[350px] lg:p-[64px] flex flex-col items-center">
               <img src={destination1} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">
@@ -36,7 +54,7 @@ const HServices = () => {
             </SwiperSlide>
 
             {/* card -2=========== */}
-            <SwiperSlide className="service-slide flex flex-col items-center">
+            <SwiperSlide className="service-slide p-10 lg:h-[443px] w-[80vw] lg:w-[350px] lg:p-[64px] flex flex-col items-center">
               <img src={booking} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">
@@ -46,7 +64,7 @@ const HServices = () => {
             </SwiperSlide>
 
             {/* card -3=========== */}
-            <SwiperSlide className="service-slide flex flex-col items-center">
+            <SwiperSlide className="service-slide p-10 lg:h-[443px] w-[80vw] lg:w-[350px] lg:p-[64px] flex flex-col items-center">
               <img src={cloudy} alt="" className="w-16 h-16 my-5" />
 
               <div className="text-center">
@@ -59,7 +77,7 @@ const HServices = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

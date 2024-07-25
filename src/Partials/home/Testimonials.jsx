@@ -15,7 +15,7 @@ const Testimonials = () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   return (
-    <section className="relative text-center my-20 top-0 ">
+    <section className="relative text-center py-28 ">
        <div><img src={layer} alt="" className="w-full" /></div>
 
       <div className="flex flex-col items-center justify-center ">
@@ -29,13 +29,13 @@ const Testimonials = () => {
         <div className="flex justify-between absolute top-64  w-full">
           <button
             ref={navigationPrevRef}
-            className=" hover:bg-secondary hover:text-base border hover:border-secondary transition ease-in-out delay-150  hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50 rounded-full flex items-center justify-center  w-16 h-16 p-5"
+            className="z-10 hover:bg-secondary hover:text-base border hover:border-secondary transition ease-in-out delay-150  hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50 rounded-full flex items-center justify-center  w-16 h-16 p-5"
           >
             <FaArrowLeftLong />
           </button>
           <button
             ref={navigationNextRef}
-            className="right-0 hover:bg-secondary hover:text-base border hover:border-secondary transition ease-in-out delay-150  hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50 rounded-full flex items-center justify-center  w-16 h-16 p-5"
+            className="z-10 right-0 hover:bg-secondary hover:text-base border hover:border-secondary transition ease-in-out delay-150  hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/50 rounded-full flex items-center justify-center  w-16 h-16 p-5"
           >
             <FaArrowRightLong />
           </button>
@@ -55,7 +55,7 @@ const Testimonials = () => {
           speed={1000} 
           effect={"slide"} 
           grabCursor={true}
-          className="mySwiper !w-[920px]  py-5 mx-28 px-2 "
+          className="mySwiper lg:!w-[920px] w-[95vw] py-5 lg:mx-28 px-2 "
         >
           {clientslides.map((elem) => {
             const { id, picture, name, title, description } = elem;
@@ -63,7 +63,7 @@ const Testimonials = () => {
             return (
               <SwiperSlide
                 key={id}
-                className="shadow-none rounded-2xl testimonial-slide !w-full flex flex-col justify-center items-center text-center"
+                className="shadow-none rounded-2xl lg:h-[470px] !w-full flex flex-col justify-center items-center text-center"
               >
                 <div className="w-[100px] h-[100px] rounded-full overflow-hidden">
                   <img src={picture} alt="" className="h-auto w-full" />
@@ -72,7 +72,7 @@ const Testimonials = () => {
                   <h5 className="text-tertiary">{name}</h5>
                   <h5 className="">{title}</h5>
                   <h5 className="text-tertiary my-5">4.8</h5>
-                  <p className="mt-3 max-w-[500px]">{description}</p>
+                  <p className="mt-3 lg:max-w-[500px]">{description}</p>
                 </div>
               </SwiperSlide>
             );

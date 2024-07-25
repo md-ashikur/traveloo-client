@@ -75,7 +75,7 @@ const HExplore = () => {
           speed={1000} 
           effect={"slide"} 
           grabCursor={true}
-          className="mySwiper my-5 py-5 px-6"
+          className="mySwiper my-5 py-5 "
         >
           {slides.map((elem) => {
             const { id, picture, title, price, description } = elem;

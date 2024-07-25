@@ -26,12 +26,12 @@ const HomeBody = () => {
 
       <div className="lg:px-28 px-5 py-28 flex justify-center">
         {/* header   start */}
-        <header className="flex gap-10">
-          <div className="max-w-[350px] mt-16">
+        <header className="flex lg:flex-row flex-col gap-10">
+          <div className="max-w-[350px] lg:mt-16">
             <button className="text-primary  font-semibold flex items-center rounded-full  gap-4  ">
               Explore the world! <GiSuitcase className="w-10 h-10" />
             </button>
-            <h1>
+            <h1 className="lg:text-[54px] text-4xl font-bold leading-tight">
               Travel <span className="text-primary">top destination</span> of
               the world
             </h1>
@@ -57,18 +57,18 @@ const HomeBody = () => {
 
           <div className=" flex flex-col  items-center ">
             <img src={layer} alt="" className="" />
-            <div className="relative -mt-52 grid grid-cols-2 gap-5 ">
+            <div className="relative lg:-mt-52 grid grid-cols-2 gap-5 ">
               <div className="flex flex-col gap-5">
-                <div className="h-[300px] w-[272px] rounded-[32px] overflow-hidden">
+                <div className="lg:h-[300px] lg:w-[272px] rounded-[32px] overflow-hidden">
                   <img src={home1} alt="" className="h-auto w-full " />
                 </div>
-                <div className="h-[300px] w-[272px] rounded-[32px] overflow-hidden">
+                <div className="lg:h-[300px] lg:w-[272px] rounded-[32px] overflow-hidden">
                   <img src={home3} alt="" className="h-auto w-full" />
                 </div>
               </div>
 
               <div className="flex items-center">
-                <div className="h-[400px] w-[272px] rounded-[32px]  overflow-hidden">
+                <div className="lg:h-[400px] lg:w-[272px] rounded-[32px]  overflow-hidden">
                   <img src={home2} alt="" className="h-auto w-full" />
                 </div>
               </div>
